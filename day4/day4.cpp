@@ -1,5 +1,5 @@
-// Release: cl /EHsc /std:c++latest day3.cpp
-// Debug  : cl /EHsc /std:c++latest /Zi /DDEBUG day3.cpp
+// Release: cl /EHsc /std:c++latest day4.cpp
+// Debug  : cl /EHsc /std:c++latest /Zi /DDEBUG day4.cpp
 #include <fstream>       // For std::ifstream
 #include <iostream>      // For std::cout
 #include <sstream>       // For std::istringstream
@@ -7,6 +7,7 @@
 #include <string>        // For std::string
 #include <cassert>       // For assert()
 #include <algorithm>     // For std::count_if()
+#include <ranges>
 
 using ID = int;
 using Section = std::pair<ID, ID>;
@@ -64,7 +65,7 @@ int main()
   for( const auto& ep : test_data )
     std::cout << ep << " contains? " << Contains(ep) << std::endl;
 
-  auto containscount = std::count_if(std::begin(elfpairs), std::end(elfpairs), Contains);
+  const auto containscount = std::ranges::count_if(elfpairs, Contains);
   std::cout << containscount << std::endl;
 
   // Part2 (overlaps is the same as not outside)
@@ -84,7 +85,7 @@ int main()
   for( const auto& ep : test_data )
     std::cout << ep << " overlaps? " << Overlap(ep) << std::endl;
 
-  auto overlapcount = std::count_if(std::begin(elfpairs), std::end(elfpairs), Overlap);
+  const auto overlapcount = std::ranges::count_if(elfpairs, Overlap);
   std::cout << overlapcount << std::endl;
 
   return 0;
