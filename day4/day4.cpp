@@ -24,9 +24,6 @@ std::ostream& operator<<(std::ostream& os, const ElfPair& ep)
 
 int main()
 {
-  Section elf1;
-  Section elf2;
-
   using ElfPairs = std::vector<ElfPair>;
   ElfPairs elfpairs;
 
