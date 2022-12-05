@@ -76,7 +76,17 @@ int main()
     if( line.empty() )
       continue;
 
-    if( line.front() == '[' )
+    if( line.front() == 'm' )
+    {
+      Move move;
+
+      std::string word; // dummy
+      std::istringstream istr(line);
+      istr >> word >> std::get<0>(move) >> word >> std::get<1>(move) >> word >> std::get<2>(move);
+
+      moves.push_back(move);
+    }
+    else if( line[1] != '1' )
     {
       const StackNo stackscount = line.length()/4+1;
       if( stacks.empty() )
@@ -87,16 +97,6 @@ int main()
         if( CrateId ch = line[4*n+1]; ch != ' ' )
           stacks[n].push_back(ch);
       }
-    }
-    else if( line.front() == 'm' )
-    {
-      Move move;
-
-      std::string word; // dummy
-      std::istringstream istr(line);
-      istr >> word >> std::get<0>(move) >> word >> std::get<1>(move) >> word >> std::get<2>(move);
-
-      moves.push_back(move);
     }
   }
 
