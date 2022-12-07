@@ -14,11 +14,13 @@ My C++ solves for [Advent of Code 2022](https://adventofcode.com/2022). I urge y
 
 * https://github.com/ahans/aoc2022
 * https://github.com/biggysmith/advent_of_code_2022
+* https://github.com/billymyers/advent-of-code-2022
 * https://github.com/bobolpwnz/AdventOfCode2022
 * https://github.com/crzyhorse/AdventOfCode2022
 * https://github.com/deafpolygon/advent-of-code
 * https://github.com/dhconnelly/advent-of-code-2022
 * https://github.com/gequalspisquared/AoC2022
+* https://github.com/Mereep/advent_of_code_2022_cpp
 * https://github.com/MichaelCG8/aoc2022
 * https://github.com/mkinkela1/advent-of-code-2022
 * https://github.com/RiotNu/advent-of-code-2022
