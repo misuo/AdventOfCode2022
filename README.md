@@ -8,6 +8,7 @@ My C++ solves for [Advent of Code 2022](https://adventofcode.com/2022). I urge y
 * [Day 4: Camp Cleanup](day4/day4.cpp)
 * [Day 5: Supply Stacks](day5/day5.cpp)
 * [Day 6: Tuning Trouble](day6/day6.cpp)
+* [Dat 7: No Space Left On Device](day7/day7.cpp)
 
 ## Other C++ solutions
 
