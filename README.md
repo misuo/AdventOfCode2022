@@ -8,7 +8,7 @@ My C++ solves for [Advent of Code 2022](https://adventofcode.com/2022). I urge y
 * [Day 4: Camp Cleanup](day4/day4.cpp)
 * [Day 5: Supply Stacks](day5/day5.cpp)
 * [Day 6: Tuning Trouble](day6/day6.cpp)
-* [Dat 7: No Space Left On Device](day7/day7.cpp)
+* [Day 7: No Space Left On Device](day7/day7.cpp) _Took way too long for this. Rather than coding my own tree and visitors, I ended up simply to collect directories and their sizes into a collection, "std::map<dir,size>" used. This was my initial gut feeling, but was of course afraid of what part II might bring. It paned out. I do however also have a version using Boost Graph Library (BGL), building up the "file system" of directories and files._
 
 ## Other C++ solutions
 
